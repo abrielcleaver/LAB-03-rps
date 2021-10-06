@@ -14,53 +14,50 @@
 
 <body>
     <header>
-        <h1>
-            HELLO
-        </h1>
+        <h1>ROCK PAPER SCISSORS ONLINE</h1>
     </header>
-<div>
-<p id="rules">
-    <dl>
-        <dt><b>What are the rules?</b></dt>
-        <dd>If you choose Rock, you will win against Edward Scissorhands but lose against Paper.</dd>
-        <dd>If you choose Edward Scissorhands, you will win against Paper but lose against Rock.</dd>
-        <dd>If you choose Paper, you will win against Rock but lose against Edward Scissorhands.</dd>
-        </dl>
-</p>
-
-</div>
-<div id="rps-choices">
-    <label id="rock">
-        <input type="radio" name="color" value="">
-        <img src="assets/the-rock.png" height="350px" width="250px" alt="">
+    <div>
+        <p id="rules">
+            <dl>
+                <dt>What are the rules?</dt>
+                <dd>If you choose Rock, you will win against Edward Scissorhands but lose against Paper.</dd>
+                <dd>If you choose Edward Scissorhands, you will win against Paper but lose against Rock.</dd>
+                <dd>If you choose Paper, you will win against Rock but lose against Edward Scissorhands.</dd>
+            </dl>
+        </p>
+    </div>
+    
+    <div id="rps-choices">
+        <label id="rock">
+            <input type="radio" name="color" value="">
+            <img src="assets/the-rock.png" height="350px" width="250px" alt="">
+            <br>
+            <span id="rock" class="label">rock</span>
+        </label>
         <br>
-        <span id="rock" class="label">rock</span>
-    </label>
-    <br>
-    <label>
-        <input type="radio" name="color" value="">
-        <img src="assets/paper.png" height="350px" width="250px" alt="">
+        <label>
+            <input type="radio" name="color" value="">
+            <img src="assets/paper.png" height="350px" width="250px" alt="">
+            <br>
+            <span id="paper" class="label">paper</span>
+        </label>
         <br>
-        <span id="paper" class="label">paper</span>
-    </label>
-    <br>
-    <label>
-        <input type="radio" name="color" value="">
-        <img src="assets/edwardscissorhands.png" height="350px" width="250px" alt="">
-        <br>
-        <span id="scissors" class="label">scissors</span>
-    </label>
-</div>
-   
-<button id="play">PLAY</button>
-
-<div class="results">
-    <p id="result"></p>
-    <p> You won <span id="wins">0</span> times</p>
-    <p> You lost <span id="losses">0</span> times</p>
-    <p>You had <span id="draws">0</span> draws</p>
-</div>
-
+        <label>
+            <input type="radio" name="color" value="">
+            <img src="assets/edwardscissorhands.png" height="350px" width="250px" alt="">
+            <br>
+            <span id="scissors" class="label">scissors</span>
+        </label>
+    </div>
+    
+    <button id="play">PLAY</button>
+    
+    <div class="results">
+        <p id="result"></p>
+        <p> You won <span id="wins">0</span> times</p>
+        <p> You lost <span id="losses">0</span> times</p>
+        <p>You had <span id="draws">0</span> draws</p>
+    </div>
 
 
     <script type="module" src="./app.js"></script>
