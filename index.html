@@ -29,34 +29,34 @@
     
     <div id="rps-choices">
         <label id="rock">
-            <input type="radio" name="color" value="">
+            <input type="radio" name="character" value="rock">
             <img src="assets/the-rock.png" height="350px" width="250px" alt="">
             <br>
             <span id="rock" class="label">rock</span>
         </label>
         <br>
         <label>
-            <input type="radio" name="color" value="">
+            <input type="radio" name="character" value="paper">
             <img src="assets/paper.png" height="350px" width="250px" alt="">
             <br>
             <span id="paper" class="label">paper</span>
         </label>
         <br>
         <label>
-            <input type="radio" name="color" value="">
+            <input type="radio" name="character" value="scissors">
             <img src="assets/edwardscissorhands.png" height="350px" width="250px" alt="">
             <br>
             <span id="scissors" class="label">scissors</span>
         </label>
     </div>
-    
+    <p id="error" class="hidden">You need to pick rock, paper, or scissors!</p>
     <button id="play">PLAY</button>
     
     <div class="results">
         <p id="result"></p>
-        <p> You won <span id="wins">0</span> times</p>
-        <p> You lost <span id="losses">0</span> times</p>
-        <p>You had <span id="draws">0</span> draws</p>
+        <p> You won <span id="win">0</span> times</p>
+        <p> You lost <span id="lost">0</span> times</p>
+        <p>You had <span id="draw">0</span> draws</p>
     </div>
 
 
