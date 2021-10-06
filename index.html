@@ -17,14 +17,12 @@
         <h1>ROCK PAPER SCISSORS ONLINE</h1>
     </header>
     <div>
-        <p id="rules">
-            <dl>
-                <dt>What are the rules?</dt>
-                <dd>If you choose Rock, you will win against Edward Scissorhands but lose against Paper.</dd>
-                <dd>If you choose Edward Scissorhands, you will win against Paper but lose against Rock.</dd>
-                <dd>If you choose Paper, you will win against Rock but lose against Edward Scissorhands.</dd>
-            </dl>
-        </p>
+        <dl id="rules">
+            <dt>What are the rules?</dt>
+            <dd>If you choose Rock, you will win against Edward Scissorhands but lose against Paper.</dd>
+            <dd>If you choose Edward Scissorhands, you will win against Paper but lose against Rock.</dd>
+            <dd>If you choose Paper, you will win against Rock but lose against Edward Scissorhands.</dd>
+        </dl>
     </div>
     
     <div id="rps-choices">
@@ -54,10 +52,12 @@
     
     <div class="results">
         <p id="result"></p>
-        <p> You won <span id="win">0</span> times</p>
-        <p> You lost <span id="lost">0</span> times</p>
-        <p>You had <span id="draw">0</span> draws</p>
+        <p id="msg1"> You won <span id="win">0</span> times</p>
+        <p id="msg2"> You lost <span id="lost">0</span> times</p>
+        <p id="msg3">You had <span id="draw">0</span> draws</p>
     </div>
+
+    <button id="play-again">PLAY AGAIN</button>
 
 
     <script type="module" src="./app.js"></script>

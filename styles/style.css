@@ -29,7 +29,9 @@ header {
     padding: 10px;
 }
 #rules {
-
+    border: dotted yellow;
+    margin-right: 650px;
+    margin-left: 20px;
 }
 
 #rps-choices {
