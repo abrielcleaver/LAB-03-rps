@@ -1,5 +1,29 @@
 # Alchemy Bootstrap Template
 
+## RPS 
+### HTML elements needed?
+* 3 radio button inputs
+* button to submit
+* text field for result
+* text field for wins/losses
+
+### What state do I need?
+* userPick
+* wins / losses / totalPlays
+* randomRPS
+
+### What events am I listening for?
+* button click
+    * generate random rps (0, 1, 2)
+    * get user input
+    * compare random rps to user choice
+        * if guessed correctly -- increment the wins
+        * else -- increment the losses
+
+
+
+
+
 ## Making a plan
 
 (bolded steps are mandatory, unbolded are for more advanced projects)

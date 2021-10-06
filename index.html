@@ -14,58 +14,54 @@
 
 <body>
     <header>
-        <div class="gutter-right logo">
-            <img src="assets/big-logo.png" />
-        </div>
+        <h1>
+            HELLO
+        </h1>
     </header>
-    <main>
-        <section class="main-section">
-            <img class="main-logo" src="./assets/alchemy-logo.png" />
-            <h2>
-                Welcome to Alchemy Bootstrap!
-            </h2>
+<div>
+<p id="rules">
+    <dl>
+        <dt><b>What are the rules?</b></dt>
+        <dd>If you choose Rock, you will win against Edward Scissorhands but lose against Paper.</dd>
+        <dd>If you choose Edward Scissorhands, you will win against Paper but lose against Rock.</dd>
+        <dd>If you choose Paper, you will win against Rock but lose against Edward Scissorhands.</dd>
+        </dl>
+</p>
 
-            <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam repellendus similique consectetur
-                voluptas facilis molestiae voluptates nobis error sapiente, ad, ipsa vero non, sint eligendi? Eos
-                praesentium iusto magnam exercitationem.
-                Earum sunt voluptatibus molestias, sint voluptatum quos reiciendis. Id asperiores deleniti dolores
-                provident, eius, nostrum aperiam vel, optio qui illo corrupti in. Eum quam, est nemo porro sapiente
-                excepturi assumenda.
-                Rerum unde quidem maxime. Ullam, dolores labore molestias voluptatibus adipisci quod? Quaerat nihil
-                inventore molestiae assumenda, voluptates vel necessitatibus eligendi? Accusamus ratione eligendi
-                reprehenderit? Beatae incidunt molestias ea soluta nulla.
-                Fugiat quae soluta voluptate mollitia praesentium modi ex illo, autem assumenda, vel aliquam fugit
-                possimus dolorem esse corporis ipsa! Voluptatem sapiente error non, ea optio suscipit quasi maxime nobis
-                ex?
-                Et ipsa tenetur ullam ab nesciunt quas fugit velit impedit illum esse eligendi corporis culpa
-                praesentium aspernatur ex sint veniam quidem, doloribus corrupti hic vitae. Eum neque ducimus omnis
-                exercitationem?
-            </p>
-            <hr />
-            <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam repellendus similique consectetur
-                voluptas facilis molestiae voluptates nobis error sapiente, ad, ipsa vero non, sint eligendi? Eos
-                praesentium iusto magnam exercitationem.
-                Earum sunt voluptatibus molestias, sint voluptatum quos reiciendis. Id asperiores deleniti dolores
-                provident, eius, nostrum aperiam vel, optio qui illo corrupti in. Eum quam, est nemo porro sapiente
-                excepturi assumenda.
-                Rerum unde quidem maxime. Ullam, dolores labore molestias voluptatibus adipisci quod? Quaerat nihil
-                inventore molestiae assumenda, voluptates vel necessitatibus eligendi? Accusamus ratione eligendi
-                reprehenderit? Beatae incidunt molestias ea soluta nulla.
-                Fugiat quae soluta voluptate mollitia praesentium modi ex illo, autem assumenda, vel aliquam fugit
-                possimus dolorem esse corporis ipsa! Voluptatem sapiente error non, ea optio suscipit quasi maxime nobis
-                ex?
-                Et ipsa tenetur ullam ab nesciunt quas fugit velit impedit illum esse eligendi corporis culpa
-                praesentium aspernatur ex sint veniam quidem, doloribus corrupti hic vitae. Eum neque ducimus omnis
-                exercitationem?
-            </p>
+</div>
+<div id="rps-choices">
+    <label id="rock">
+        <input type="radio" name="color" value="">
+        <img src="assets/the-rock.png" height="350px" width="250px" alt="">
+        <br>
+        <span id="rock" class="label">rock</span>
+    </label>
+    <br>
+    <label>
+        <input type="radio" name="color" value="">
+        <img src="assets/paper.png" height="350px" width="250px" alt="">
+        <br>
+        <span id="paper" class="label">paper</span>
+    </label>
+    <br>
+    <label>
+        <input type="radio" name="color" value="">
+        <img src="assets/edwardscissorhands.png" height="350px" width="250px" alt="">
+        <br>
+        <span id="scissors" class="label">scissors</span>
+    </label>
+</div>
+   
+<button id="play">PLAY</button>
 
-        </section>
-    </main>
-    <footer>
-        <div class="copy gutter-right">&copy; 2020 Alchemy Code Lab</div>
-    </footer>
+<div class="results">
+    <p id="result"></p>
+    <p> You won <span id="wins">0</span> times</p>
+    <p> You lost <span id="losses">0</span> times</p>
+    <p>You had <span id="draws">0</span> draws</p>
+</div>
+
+
 
     <script type="module" src="./app.js"></script>
 </body>
