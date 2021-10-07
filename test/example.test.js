@@ -31,3 +31,9 @@ test ('win - userChoice-scissors v computerThrow-paper', (expect) =>{
     const actual = didUserWin('scissors','paper');
     expect.equal(actual,expected);
 });
+
+test ('lost', (expect) =>{
+    const expected = 'lost'
+    const actual = didUserWin('scissor', 'rock');
+    expect.equal(actual,expected);
+});
