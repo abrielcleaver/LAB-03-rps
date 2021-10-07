@@ -1,12 +1,42 @@
-input[type=radio] {
-    display: hidden;
+body {
+    background-color: #3bceac;
 }
 
-input[type=radio]:checked + .label {
+header {
+    color: #540d6e;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+#rules {
+    
+   margin: auto;
+   margin-left: 350px;
+   margin-right: 350px;
+   padding: 10px;
+   background: #0ead69;
+   text-align: center;
+   color: #ffd23f;
+   font-family: "Source Code Pro" sans-serif;
+}
+
+#rps-choices {
+    display: flex;
+    justify-content: right;
+    padding: 5px;
+    margin-left: 300px;
+    margin-right: 200px;
+    margin-top: 10px;
+}
+
+input[type=radio]{
+    display: none;
+}
+/* input[type=radio]:checked + .label {
     font-size: 2rem;
     font-weight: bold;
     text-transform: uppercase;
-}
+} */
 
 label:hover {
     cursor: pointer;
@@ -23,24 +53,14 @@ input[type=radio]:checked + img {
     filter: grayscale(0%);
 }
 
-header {
-    background-color: black;
-    color: cornflowerblue;
-    padding: 10px;
-}
-#rules {
-    border: dotted yellow;
-    margin-right: 650px;
-    margin-left: 20px;
+#error {
+    color: #ee4266;
+    font-size: larger;
 }
 
-#rps-choices {
-    display: flex;
-    justify-content: right;
-    padding: 5px;
-    border: solid gray;
-    margin-left: 200px;
-    margin-right: 200px;
-    margin-top: 40px;
-}
+#play {
+    background-color: #ee4266;
+    color: white;
+    border-radius: 10px;
 
+}

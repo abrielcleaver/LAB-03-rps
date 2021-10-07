@@ -9,6 +9,7 @@
 
 import { didUserWin, getRandomThrow } from "./utils.js";
 
+const error =document.getElementById('error');
 const playButton = document.getElementById('play');
 const winSpan = document.getElementById('win');
 const lostSpan = document.getElementById('lost');
@@ -30,7 +31,6 @@ playButton.addEventListener('click', () => {
   if(!selected){
     return error.classList.remove('hidden');
   }
-  
   error.classList.add('hidden');
   const userChoice = selected.value;
   const computerThrow = getRandomThrow();
