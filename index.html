@@ -34,30 +34,33 @@
     <div id="rps-choices">
         <label id="rock">
             <input type="radio" name="character" value="rock">
-            <img src="assets/the-rock.png" height="350px" width="250px" alt="">
+            <img src="assets/the-rock.png" height="250px" width="250px" alt="">
         </label>
         <br>
         <label>
             <input type="radio" name="character" value="paper">
-            <img src="assets/paper.png" height="350px" width="250px" alt="">
+            <img src="assets/paper.png" height="250px" width="250px" alt="">
         </label>
         <br>
         <label>
             <input type="radio" name="character" value="scissors">
-            <img src="assets/edwardscissorhands.png" height="350px" width="250px" alt="">
+            <img src="assets/edwardscissorhands.png" height="250px" width="250px" alt="">
         </label>
     </div>
-    <p id="error" class="hidden">You need to pick rock, paper, or scissors!</p>
-    <button id="play">SHOOT</button>
+    <div id="container">
+        <p id="error" class="hidden">You need to pick rock, paper, or scissors!</p>
+       
+        <button id="play">SHOOT</button>
+        
+        <div class="results">
+            <p id="result"></p>
+            <p id="msg1"> You won <span id="win">0</span> times</p>
+            <p id="msg2"> You lost <span id="lost">0</span> times</p>
+            <p id="msg3">You had <span id="draw">0</span> draws</p>
+        </div>
     
-    <div class="results">
-        <p id="result"></p>
-        <p id="msg1"> You won <span id="win">0</span> times</p>
-        <p id="msg2"> You lost <span id="lost">0</span> times</p>
-        <p id="msg3">You had <span id="draw">0</span> draws</p>
+        <button id="play-again">PLAY AGAIN</button>
     </div>
-
-    <button id="play-again">PLAY AGAIN</button>
 
 
     <script type="module" src="./app.js"></script>

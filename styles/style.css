@@ -7,6 +7,7 @@ header {
     padding: 10px;
     display: flex;
     justify-content: center;
+    font-family: "Source Code Pro", sans-serif;
 }
 #rules {
     
@@ -14,18 +15,17 @@ header {
    margin-left: 350px;
    margin-right: 350px;
    padding: 10px;
+   border-radius: 20px;
    background: #0ead69;
    text-align: center;
    color: #ffd23f;
-   font-family: "Source Code Pro" sans-serif;
+   font-family: "Source Code Pro", sans-serif;
 }
 
 #rps-choices {
     display: flex;
-    justify-content: right;
+    justify-content: center;
     padding: 5px;
-    margin-left: 300px;
-    margin-right: 200px;
     margin-top: 10px;
 }
 
@@ -52,7 +52,12 @@ input[type=radio]:checked + img {
     border: 5px solid;
     filter: grayscale(0%);
 }
-
+#container {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    font-family: "Source Code Pro", sans-serif;
+}
 #error {
     color: #ee4266;
     font-size: larger;
@@ -62,5 +67,17 @@ input[type=radio]:checked + img {
     background-color: #ee4266;
     color: white;
     border-radius: 10px;
+    padding: 10px;
+}
 
+.results {
+    text-align: center;
+}
+
+#play-again {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #ee4266;
+    color: white;
+    border-radius: 10px;
 }
