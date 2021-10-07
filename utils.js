@@ -5,7 +5,7 @@
 export function didUserWin(userChoice, computerThrow){
     if (userChoice === computerThrow){
         return 'draw';
-    } else if (userChoice === 'rock' && comp === 'scissors'){
+    } else if (userChoice === 'rock' && computerThrow === 'scissors'){
         return 'win';
     } else if (userChoice === 'paper' && computerThrow === 'rock'){
         return 'win';
