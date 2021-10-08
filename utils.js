@@ -17,5 +17,5 @@ export function didUserWin(userChoice, computerThrow){
 }
 
 export function getRandomThrow(){
-    return ['rock', 'paper', 'scissors'][Math.round(Math.random())];
+    return ['rock', 'paper', 'scissors'][Math.round(Math.random())*2];
 }
