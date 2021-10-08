@@ -25,7 +25,7 @@ let lost = 0;
 let draw = 0;
 
 playButton.addEventListener('click', () => {
-  // console.log('click')
+  console.log('click')
   
   const selected = document.querySelector('input[type=radio]:checked');
   if(!selected){
@@ -34,15 +34,15 @@ playButton.addEventListener('click', () => {
   error.classList.add('hidden');
   const userChoice = selected.value;
   const computerThrow = getRandomThrow();
+  const answer = didUserWin(userChoice, computerThrow);
 
-  if (didUserWin(userChoice, computerThrow)){
+  if (answer === 'win'){
     win++;
     result.textContent = `You Won! It was ${computerThrow}`;
-  } else  {
+  } else if (answer === 'lost') {
     lost++;
     result.textContent = `You Lost! It was ${computerThrow}`; 
-  } 
-  if (didUserWin(userChoice === computerThrow)){
+  } else if (answer === 'draw'){
     draw++;
   }
 // if the userChoice === computerThrow return 'draw'
@@ -62,4 +62,4 @@ playButton.addEventListener('click', () => {
     msg2.textContent = 'You lost 0 times';
     msg3.textContent = 'You had 0 draws'; 
 
-  })
+  });
