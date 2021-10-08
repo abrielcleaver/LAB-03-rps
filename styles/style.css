@@ -1,10 +1,10 @@
 body {
-    background-color: #3bceac;
+    background-color: #fffcf2;
 }
 
 header {
-    color: #540d6e;
-    padding: 10px;
+    color: #eb5e28;
+    padding: 5px;
     display: flex;
     justify-content: center;
     font-family: "Source Code Pro", sans-serif;
@@ -12,13 +12,13 @@ header {
 #rules {
     
    margin: auto;
-   margin-left: 350px;
-   margin-right: 350px;
-   padding: 10px;
+   margin-left: 450px;
+   margin-right: 450px;
+   padding: 5px;
    border-radius: 20px;
-   background: #0ead69;
+   background: #ccc5b9;
    text-align: center;
-   color: #ffd23f;
+   color: #403d39;
    font-family: "Source Code Pro", sans-serif;
 }
 
@@ -26,7 +26,7 @@ header {
     display: flex;
     justify-content: center;
     padding: 5px;
-    margin-top: 10px;
+    margin-top: 5px;
 }
 
 input[type=radio]{
@@ -59,15 +59,16 @@ input[type=radio]:checked + img {
     font-family: "Source Code Pro", sans-serif;
 }
 #error {
-    color: #ee4266;
+    color: #eb5e28;
     font-size: larger;
 }
 
 #play {
-    background-color: #ee4266;
+    background-color: #eb5e28;
     color: white;
     border-radius: 10px;
     padding: 10px;
+    margin: auto;
 }
 
 .results {
@@ -75,9 +76,17 @@ input[type=radio]:checked + img {
 }
 
 #play-again {
-    margin-bottom: 10px;
+    margin: auto;
     padding: 10px;
-    background-color: #ee4266;
+    background-color: #eb5e28;
     color: white;
     border-radius: 10px;
+}
+
+#msg4 {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
