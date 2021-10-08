@@ -7,9 +7,9 @@
   // use user input to update state 
   // update DOM to reflect the new state
 
-import { didUserWin, getRandomThrow } from "./utils.js";
+import { didUserWin, getRandomThrow } from './utils.js";'
 
-const error =document.getElementById('error');
+const error = document.getElementById('error');
 const playButton = document.getElementById('play');
 const winSpan = document.getElementById('win');
 const lostSpan = document.getElementById('lost');
@@ -20,7 +20,6 @@ const msg1 = document.getElementById('msg1');
 const msg2 = document.getElementById('msg2');
 const msg3 = document.getElementById('msg3');
 const msg4 = document.getElementById('msg4');
-const resetSpan = document.getElementById('reset');
 
 let win = 0;
 let lost = 0;
@@ -28,10 +27,10 @@ let draw = 0;
 let resetCount = 0;
 
 playButton.addEventListener('click', () => {
-  console.log('click')
-  
+ // console.log('click')
+
   const selected = document.querySelector('input[type=radio]:checked');
-  if(!selected){
+  if (!selected){
     return error.classList.remove('hidden');
   }
   error.classList.add('hidden');
@@ -57,15 +56,14 @@ playButton.addEventListener('click', () => {
   winSpan.textContent = win;
   lostSpan.textContent = lost;
   drawSpan.textContent = draw; 
-  });
+});
 
-  againButton.addEventListener('click', () =>{
+againButton.addEventListener('click', () =>{
     result.textContent = '' ;
     msg1.textContent = 'You won 0 times';
     msg2.textContent = 'You lost 0 times';
     msg3.textContent = 'You had 0 draws';
 
-    resetCount++
+    resetCount++;
     msg4.textContent = `Times Reset: ${resetCount}`;
-    
   });
