@@ -33,10 +33,10 @@ playButton.addEventListener('click', () => {
   if (!selected){
     return error.classList.remove('hidden');
   }
-  error.classList.add('hidden');
-  const userChoice = selected.value;
-  const computerThrow = getRandomThrow();
-  const answer = didUserWin(userChoice, computerThrow);
+  error.classList.add('hidden'); 
+  const userChoice = selected.value; 
+  const computerThrow = getRandomThrow(); 
+  const answer = didUserWin(userChoice, computerThrow); 
 
   if (answer === 'win'){
     win++;
