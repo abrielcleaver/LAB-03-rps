@@ -19,10 +19,13 @@ const againButton = document.getElementById('play-again');
 const msg1 = document.getElementById('msg1');
 const msg2 = document.getElementById('msg2');
 const msg3 = document.getElementById('msg3');
+const msg4 = document.getElementById('msg4');
+const resetSpan = document.getElementById('reset');
 
 let win = 0;
 let lost = 0;
 let draw = 0;
+let resetCount = 0;
 
 playButton.addEventListener('click', () => {
   console.log('click')
@@ -60,6 +63,9 @@ playButton.addEventListener('click', () => {
     result.textContent = '' ;
     msg1.textContent = 'You won 0 times';
     msg2.textContent = 'You lost 0 times';
-    msg3.textContent = 'You had 0 draws'; 
+    msg3.textContent = 'You had 0 draws';
 
+    resetCount++
+    msg4.textContent = `Times Reset: ${resetCount}`;
+    
   });
