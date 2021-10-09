@@ -7,7 +7,7 @@
   // use user input to update state 
   // update DOM to reflect the new state
 
-import { didUserWin, getRandomThrow } from './utils.js";'
+import { didUserWin, getRandomThrow } from './utils.js';
 
 const error = document.getElementById('error');
 const playButton = document.getElementById('play');
